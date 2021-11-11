@@ -1,0 +1,104 @@
+{
+  materials: [
+    {
+      name: 'material',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'material_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'material_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'material_metallicRoughness',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/leather_chair/scene.gltf',
+    name: 'scene',
+    recenter: 'root',
+    scale: 0.67493899999999996,
+  },
+  samplers: [
+    {
+      file: 'sampledata/leather_chair\\textures\\material_metallicRoughness.png',
+      name: 'material_metallicRoughness',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures/material_metallicRoughness.png',
+    },
+    {
+      file: 'sampledata/leather_chair\\textures\\material_baseColor.jpeg',
+      name: 'material_baseColor',
+      pipeline_name: 'textures/material_baseColor.jpeg',
+    },
+    {
+      file: 'sampledata/leather_chair\\textures\\material_normal.png',
+      name: 'material_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/material_normal.png',
+    },
+  ],
+  version: '0.54:2',
+}

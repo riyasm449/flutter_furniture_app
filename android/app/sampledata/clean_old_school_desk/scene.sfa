@@ -1,0 +1,104 @@
+{
+  materials: [
+    {
+      name: 'School-desk',
+      parameters: [
+        {
+          baseColorFactor: null,
+        },
+        {
+          baseColor: null,
+        },
+        {
+          diffuseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          diffuseColor: 'School-desk_diffuse',
+        },
+        {
+          normal: 'School-desk_normal',
+        },
+        {
+          metallicFactor: null,
+        },
+        {
+          roughnessFactor: null,
+        },
+        {
+          specularFactor: [
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          glossinessFactor: 0.17888499999999999,
+        },
+        {
+          specularGlossiness: 'School-desk_specularGlossiness',
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/clean_old_school_desk/scene.gltf',
+    name: 'scene',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/clean_old_school_desk\\textures\\School-desk_diffuse.png',
+      name: 'School-desk_diffuse',
+      pipeline_name: 'textures/School-desk_diffuse.png',
+    },
+    {
+      file: 'sampledata/clean_old_school_desk\\textures\\School-desk_specularGlossiness.png',
+      name: 'School-desk_specularGlossiness',
+      pipeline_name: 'textures/School-desk_specularGlossiness.png',
+    },
+    {
+      file: 'sampledata/clean_old_school_desk\\textures\\School-desk_normal.png',
+      name: 'School-desk_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/School-desk_normal.png',
+    },
+  ],
+  version: '0.54:2',
+}
