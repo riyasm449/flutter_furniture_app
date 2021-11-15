@@ -1,4 +1,4 @@
-# learn_ar_flutter
+<!-- # learn_ar_flutter
 
 **LearnARF** is a [Flutter](https://flutter.dev/) application which uses Google's [ARCore](https://developers.google.com/ar) to spawn 3D models into the real world. Additionally, it uses the [Sceneform SDK](https://github.com/google-ar/sceneform-android-sdk) to make it easier to handle 3D models.
 
@@ -47,3 +47,4 @@ Here is how to add 3D models to the real world:
 | 2   | Press `START`                                             | <img src="https://i.imgur.com/kYjxgKO.png" width="108" height="240"> |
 | 3   | Wait for the app to detect a plane                        | <img src="https://i.imgur.com/zM2hVRM.jpg" width="108" height="240"> |
 | 4   | Tap the part of the plane where you want to add the model | <img src="https://i.imgur.com/sLguwBW.jpg" width="108" height="240"> |
+ -->
