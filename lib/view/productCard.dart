@@ -49,19 +49,21 @@ class ProductCard extends StatelessWidget {
             ),
             // our product image
             Positioned(
-              top: 0,
+              top: 40,
               right: 0,
               child: Hero(
                 tag: '1',
                 child: Container(
                   padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                  height: 160,
+                  height: 100,
                   // image is square but we add extra 20 + 20 padding thats why width is 200
                   width: 200,
                   child: Image.network(
+                    // "https://5.imimg.com/data5/JC/UL/YL/SELLER-70427874/wooden-table-250x250.jpg",
+                    // // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-CwjCAcmC_SAvo5r6yHXQu4KBGdhi0yaM4Q&usqp=CAU",
                     product.images[0] ??
                         "https://www.godrejinterio.com/imagestore/B2C/56101543SD00017/56101543SD00017_01_500x500.png",
-                    fit: BoxFit.cover,
+                    // fit: BoxFit.fitWidth,
                   ),
                 ),
               ),
@@ -100,7 +102,7 @@ class ProductCard extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        "\$${product.price}",
+                        "₹${product.price}",
                         style: Theme.of(context).textTheme.button,
                       ),
                     ),

@@ -42,16 +42,16 @@ class _StartingPageState extends State<StartingPage> {
                   ),
                 ),
                 ListView.builder(
-                  itemCount: productList.length,
+                  itemCount: productList.product.length,
                   itemBuilder: (context, index) => ProductCard(
                     itemIndex: index,
-                    product: productList[index],
+                    product: productList.product[index],
                     press: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => DetailsScreen(
-                            product: productList[index],
+                            product: productList.product[index],
                           ),
                         ),
                       );

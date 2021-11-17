@@ -23,8 +23,12 @@ dependencies:
   google_fonts: ^1.1.0
   cupertino_icons: ^0.1.2
   arcore_flutter_plugin: any
+  provider: any
+#  http: any
+  dio:
 #  model_viewer: any
-
+#  firebase_core: any
+#  firebase_database: any
 
 dev_dependencies:
   flutter_test:

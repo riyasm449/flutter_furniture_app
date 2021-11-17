@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:learn_ar_flutter/model/data.dart';
 import 'package:learn_ar_flutter/utils/commons.dart';
+import 'package:learn_ar_flutter/view/camera_screen.dart';
 import 'package:learn_ar_flutter/view/details/product_image.dart';
 
 import 'chat_and_cart.dart';
-import 'list_of_color.dart';
 
 class Body extends StatelessWidget {
   final Product product;
@@ -44,7 +44,7 @@ class Body extends StatelessWidget {
                       ),
                     ),
                   ),
-                  ListOfColors(),
+                  // ListOfColors(),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
                     child: Text(
@@ -71,7 +71,46 @@ class Body extends StatelessWidget {
                 ],
               ),
             ),
+            viewAr(context),
             ChatAndAddToCart(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget viewAr(BuildContext context) {
+    return InkWell(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => CameraScreen(selectedProduct: product)));
+      },
+      child: Container(
+        margin: EdgeInsets.all(kDefaultPadding),
+        padding: EdgeInsets.symmetric(
+          horizontal: kDefaultPadding,
+          vertical: kDefaultPadding / 2,
+        ),
+        decoration: BoxDecoration(
+          color: Color(0xFFFCBF1E),
+          borderRadius: BorderRadius.circular(30),
+        ),
+        child: Row(
+          children: <Widget>[
+            Spacer(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Icon(
+                Icons.image,
+                color: Colors.white,
+              ),
+            ),
+
+            Text(
+              "View In AR View",
+              style: TextStyle(color: Colors.white),
+            ),
+            // it will cover all available spaces
+            Spacer(),
           ],
         ),
       ),

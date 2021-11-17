@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:learn_ar_flutter/splash-screen.dart';
 
 import 'utils/commons.dart';
-import 'view/starting_page.dart';
 
 main() => runApp(MyApp());
 
@@ -23,7 +23,8 @@ class MyApp extends StatelessWidget {
         accentColor: kPrimaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: StartingPage(),
+      // home: StartingPage(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

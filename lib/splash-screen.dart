@@ -1,0 +1,48 @@
+import 'package:flutter/material.dart';
+import 'package:learn_ar_flutter/utils/commons.dart';
+import 'package:learn_ar_flutter/view/starting_page.dart';
+
+class SplashScreen extends StatefulWidget {
+  @override
+  _SplashScreenState createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 3), navigate);
+  }
+
+  Future navigate() {
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => StartingPage()));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            color: kPrimaryColor,
+          ),
+          Positioned(
+              child: Text(
+            "Mueble AR",
+            style: TextStyle(color: kBackgroundColor, fontSize: 30, fontWeight: FontWeight.bold),
+          )),
+          Positioned(
+              bottom: 20,
+              child: Text(
+                "by Mohamed Riyas A\n\& Srinivas M",
+                textAlign: TextAlign.center,
+                style: TextStyle(color: kBackgroundColor, fontSize: 15, fontWeight: FontWeight.bold),
+              )),
+        ],
+      ),
+    );
+  }
+}

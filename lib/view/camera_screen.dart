@@ -46,8 +46,8 @@ class _CameraScreenState extends State<CameraScreen> {
   _onHitDetected(ArCoreHitTestResult plane) {
     controller.addArCoreNodeWithAnchor(
       ArCoreReferenceNode(
-        name: widget.selectedProduct.name,
-        obcject3DFileName: widget.selectedProduct.tdimg,
+        name: widget.selectedProduct.tdimg,
+        obcject3DFileName: widget.selectedProduct.tdimg + ".sfb",
         position: plane.pose.translation,
         rotation: plane.pose.rotation,
       ),

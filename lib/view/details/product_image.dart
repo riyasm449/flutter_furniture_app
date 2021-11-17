@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:learn_ar_flutter/utils/commons.dart';
 
@@ -16,24 +17,11 @@ class ProductPoster extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(vertical: kDefaultPadding),
       height: size.width * 0.8,
-      child: Stack(
-        alignment: Alignment.bottomCenter,
-        children: <Widget>[
-          Container(
-            height: size.width * 0.7,
-            width: size.width * 0.7,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              shape: BoxShape.circle,
-            ),
-          ),
-          Image.network(
-            image,
-            height: size.width * 0.65,
-            width: size.width * 0.65,
-            fit: BoxFit.cover,
-          ),
-        ],
+      child: Container(
+        height: size.width * 0.7,
+        width: size.width * 0.7,
+        decoration: BoxDecoration(
+            color: Colors.white, shape: BoxShape.circle, image: DecorationImage(image: NetworkImage(image))),
       ),
     );
   }

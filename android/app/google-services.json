@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "239861312838",
+    "project_id": "mueble-ar",
+    "storage_bucket": "mueble-ar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239861312838:android:6605aebc0742af68bbc947",
+        "android_client_info": {
+          "package_name": "com.example.learn_ar_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239861312838-4p1rrm564k351c9thcnhkmcbgg99v0an.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAefAQJabanRMgzvnoRAd1AOBP4MA3frZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239861312838-4p1rrm564k351c9thcnhkmcbgg99v0an.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
