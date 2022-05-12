@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "239861312838",
-    "project_id": "mueble-ar",
-    "storage_bucket": "mueble-ar.appspot.com"
+    "project_number": "567971276845",
+    "project_id": "muebles-ar",
+    "storage_bucket": "muebles-ar.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:239861312838:android:6605aebc0742af68bbc947",
+        "mobilesdk_app_id": "1:567971276845:android:5b8fab18c90eb4b86030a4",
         "android_client_info": {
           "package_name": "com.example.learn_ar_flutter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "239861312838-4p1rrm564k351c9thcnhkmcbgg99v0an.apps.googleusercontent.com",
+          "client_id": "567971276845-607gsfu79i0ol0bs5gbjbmoahfk27k6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.learn_ar_flutter",
+            "certificate_hash": "6a5812418cd711d865a14825670d12f3efea6d61"
+          }
+        },
+        {
+          "client_id": "567971276845-v04n54vhjeu19cgp2clcsjvp4lr4hh01.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAefAQJabanRMgzvnoRAd1AOBP4MA3frZw"
+          "current_key": "AIzaSyAqc9KdyDFU_JeHYImcfuuV7QUYQFqXwhY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "239861312838-4p1rrm564k351c9thcnhkmcbgg99v0an.apps.googleusercontent.com",
+              "client_id": "567971276845-v04n54vhjeu19cgp2clcsjvp4lr4hh01.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

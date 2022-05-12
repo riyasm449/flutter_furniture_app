@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:learn_ar_flutter/view/search.dart';
 
 import '../model/data.dart';
 import '../utils/commons.dart';
-import 'category.dart';
 import 'details/details.dart';
 import 'productCard.dart';
-import 'search.dart';
 
 class StartingPage extends StatefulWidget {
   const StartingPage({Key key}) : super(key: key);
@@ -26,7 +25,7 @@ class _StartingPageState extends State<StartingPage> {
       body: Column(
         children: [
           SearchBox(onChanged: (value) {}),
-          CategoryList(),
+          // CategoryList(),
           SizedBox(height: kDefaultPadding / 2),
           Expanded(
             child: Stack(

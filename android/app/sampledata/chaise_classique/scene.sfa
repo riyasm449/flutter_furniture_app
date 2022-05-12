@@ -200,13 +200,13 @@
       'Orientation',
     ],
     collision: {},
-    file: 'sampledata/chaise_classique/scene.gltf',
+    file: '../../../chaise_classique/scene.gltf',
     name: 'scene',
     recenter: 'root',
   },
   samplers: [
     {
-      file: 'sampledata/chaise_classique\\textures\\Material_baseColor.png',
+      file: '../../../chaise_classique\\textures\\Material_baseColor.png',
       name: 'Material_baseColor',
       pipeline_name: 'textures/Material_baseColor.png',
     },

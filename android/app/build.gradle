@@ -79,23 +79,12 @@ dependencies {
 }
 
 
-//sceneform.asset('sampledata/Cube/scene.gltf',
-//        'default',
-//        'sampledata/Cube/scene.sfa',
-//        'src/main/assets/cubeModel')
-//
-//
-//sceneform.asset('sampledata/Anubis Statue/scene.gltf',
-//        'default',
-//        'sampledata/Anubis Statue/scene.sfa',
-//        'src/main/assets/statueModel')
-
 sceneform.asset('sampledata/child_table/scene.gltf',
         'default',
         'sampledata/child_table/scene.sfa',
         'src/main/assets/child_table')
 
-sceneform.asset('sampledata/chaise_classique/scene.gltf',
+sceneform.asset('../../../chaise_classique/scene.gltf',
         'default',
         'sampledata/chaise_classique/scene.sfa',
         'src/main/assets/chaise_classique')

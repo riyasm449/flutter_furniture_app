@@ -48,8 +48,9 @@ class _CameraScreenState extends State<CameraScreen> {
       ArCoreReferenceNode(
         name: widget.selectedProduct.tdimg,
         obcject3DFileName: widget.selectedProduct.tdimg + ".sfb",
+        // objectUrl: "https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/Fox/glTF/Fox.gltf",
         position: plane.pose.translation,
-        rotation: plane.pose.rotation,
+        rotation: plane.rotation,
       ),
     );
   }

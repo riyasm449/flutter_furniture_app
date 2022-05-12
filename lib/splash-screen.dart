@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:learn_ar_flutter/provider/auth.dart';
 import 'package:learn_ar_flutter/utils/commons.dart';
-import 'package:learn_ar_flutter/view/starting_page.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -8,14 +8,22 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  AuthProvider authProvider = AuthProvider();
   @override
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 3), navigate);
   }
 
-  Future navigate() {
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => StartingPage()));
+  Future<void> navigate() async {
+    // if (authProvider.auth.currentUser != null) {
+    //   print('== Session Already Logged In ==');
+    //   await Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => StartingPage()));
+    // } else {
+    //   print('== New Session, Redirecting to Login ==');
+    //   Navigator.pushReplacementNamed(context, '/login');
+    // }
+    Navigator.pushReplacementNamed(context, '/login');
   }
 
   @override
@@ -37,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Positioned(
               bottom: 20,
               child: Text(
-                "by Mohamed Riyas A\n\& Srinivas M",
+                "by Mohamed Riyas,\n Srinivas \& Immanuvel",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: kBackgroundColor, fontSize: 15, fontWeight: FontWeight.bold),
               )),
