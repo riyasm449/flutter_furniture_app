@@ -48,12 +48,12 @@ class Body extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
                     child: Text(
-                      product.name,
+                      product?.name ?? "",
                       style: Theme.of(context).textTheme.headline6,
                     ),
                   ),
                   Text(
-                    '\$${product.price}',
+                    '\$${product?.price ?? '0'}',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
@@ -63,7 +63,7 @@ class Body extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
                     child: Text(
-                      product.description,
+                      product?.description ?? "",
                       style: TextStyle(color: kTextLightColor),
                     ),
                   ),
@@ -72,7 +72,7 @@ class Body extends StatelessWidget {
               ),
             ),
             viewAr(context),
-            ChatAndAddToCart(),
+            // ChatAndAddToCart(),
           ],
         ),
       ),

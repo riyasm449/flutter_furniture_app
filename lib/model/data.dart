@@ -23,7 +23,7 @@ class ProductList {
 
 class Product {
   String name;
-  List<String> images;
+  List images;
   int price;
   String description;
   String tdimg;
@@ -32,7 +32,7 @@ class Product {
 
   Product.fromJson(Map<String, dynamic> json) {
     name = json['name'];
-    images = json['images'].cast<String>();
+    images = json['images'];
     price = json['price'];
     description = json['description'];
     tdimg = json['tdimg'];

@@ -61,7 +61,7 @@ class ProductCard extends StatelessWidget {
                   child: Image.network(
                     // "https://5.imimg.com/data5/JC/UL/YL/SELLER-70427874/wooden-table-250x250.jpg",
                     // // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-CwjCAcmC_SAvo5r6yHXQu4KBGdhi0yaM4Q&usqp=CAU",
-                    product.images[0] ??
+                    product?.images[0] ??
                         "https://www.godrejinterio.com/imagestore/B2C/56101543SD00017/56101543SD00017_01_500x500.png",
                     // fit: BoxFit.fitWidth,
                   ),
@@ -83,7 +83,7 @@ class ProductCard extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                       child: Text(
-                        product.name,
+                        product?.name ?? "",
                         style: Theme.of(context).textTheme.button,
                       ),
                     ),
@@ -102,7 +102,7 @@ class ProductCard extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        "₹${product.price}",
+                        "₹${product?.price ?? 0}",
                         style: Theme.of(context).textTheme.button,
                       ),
                     ),

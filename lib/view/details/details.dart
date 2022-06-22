@@ -33,18 +33,18 @@ class DetailsScreen extends StatelessWidget {
       ),
       centerTitle: false,
       title: Text(
-        'Back'.toUpperCase(),
+        'Back',
         style: Theme.of(context).textTheme.bodyText2,
       ),
-      actions: <Widget>[
-        IconButton(
-          icon: Icon(
-            Icons.shopping_cart_outlined,
-            color: Colors.black,
-          ),
-          onPressed: () {},
-        ),
-      ],
+      // actions: <Widget>[
+      //   IconButton(
+      //     icon: Icon(
+      //       Icons.shopping_cart_outlined,
+      //       color: Colors.black,
+      //     ),
+      //     onPressed: () {},
+      //   ),
+      // ],
     );
   }
 }
